@@ -3,11 +3,15 @@ YOYOW.HTLC是YOYOW基金会推出的HTLC跨链协议，将支持与其他链通�
 
 
 命令行测试步骤说明
+
 0,编译合约
+
 gxx -g htlc.abi htlc.cpp
+
 gxx -o htlc.wast htlc.cpp
 
 1,布置合约（先将步骤0编译的htlc.abi和htlc.wasm拷贝至yoyow_client所在目录的htlc子目录内）
+
 deploy_contract 28182  0 0 ./htlc false true
 
 2,创建2种token
